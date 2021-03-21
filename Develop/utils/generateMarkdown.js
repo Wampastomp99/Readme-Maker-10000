@@ -21,4 +21,37 @@ function generateMarkdown(data, githubInfo) {
 
   ## Installation
 
-             ${data.installation}
+  ${data.installation}
+
+## Usage
+
+${data.usage}
+
+## Licence
+
+${data.licence}
+
+## Contributors
+
+${data.contributing}
+
+## Test
+
+${data.test}
+
+
+## Repository
+
+- [Project Repo](${data.repo})
+
+## GitHub
+
+![Image of me](${githubInfo.githubImage})
+- ${githubInfo.name}
+- [GitHub Profile](${githubInfo.profile})
+- <${githubInfo.email}>
+
+`;
+}
+
+module.exports = generateMarkdown;
