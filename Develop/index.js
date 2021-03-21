@@ -68,6 +68,19 @@ inquirer
                 profile: res.data.html_url,
                 name: res.data.name
         };
+        fs.writeFile("README.md", generate(data, githubInfo), function(err) {
+            if (err) {
+              throw err;
+            };
+    
+            console.log("New README file created with success!");
+          });
+        });
 
-    });
 });
+
+function init() {
+
+}
+
+init();
